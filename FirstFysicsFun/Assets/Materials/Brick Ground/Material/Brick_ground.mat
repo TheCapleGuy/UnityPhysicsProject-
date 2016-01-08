@@ -20,7 +20,7 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: d70be93f94b0fe748a77b2e2c1297f9c, type: 3}
-          m_Scale: {x: 5, y: 1}
+          m_Scale: {x: .850000024, y: 3.96000004}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -55,7 +55,7 @@ Material:
           name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
-          m_Scale: {x: 5, y: 1}
+          m_Scale: {x: .850000024, y: 3.96000004}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -90,11 +90,11 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: 0.5
+        second: .5
       data:
         first:
           name: _Parallax
-        second: 0.02
+        second: .0199999996
       data:
         first:
           name: _ZWrite
@@ -102,7 +102,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.5
+        second: .5
       data:
         first:
           name: _BumpScale
@@ -126,7 +126,7 @@ Material:
       data:
         first:
           name: _Metallic
-        second: 0.17
+        second: .170000002
       data:
         first:
           name: _EmissionScaleUI
