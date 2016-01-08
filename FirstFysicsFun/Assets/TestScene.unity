@@ -317,7 +317,7 @@ Prefab:
     - target: {fileID: 11478074, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 141436, guid: 41248e518e659d149a787fc3f80d7709, type: 2}
+      objectReference: {fileID: 120774, guid: 326c2666e00d8b341a9e7ba830059f59, type: 2}
     - target: {fileID: 11478074, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
       propertyPath: totalNumberOfProjectiles
       value: 5
