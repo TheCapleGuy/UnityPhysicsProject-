@@ -25,7 +25,7 @@ public class SpawnProjectiles : MonoBehaviour {
             if (numberOfProjectilesSpawned < totalNumberOfProjectiles)
             {
                 numberOfProjectilesSpawned++;
-                Debug.Log("Spawn!");
+                Debug.Log("Spawn!: " + prefab.name);
                 Instantiate(prefab, transform.position, Quaternion.identity);
             }
             time = 0;
