@@ -2,12 +2,13 @@
 using System.Collections;
 
 public class box : MonoBehaviour {
-    public Animator a;
-    public int hp;
-    public bool isTouched;
+    private Animator anim;
+    private int hp;
 	void Start() {
-        isTouched = false;
-	}
+        wood parent = transform.parent.GetComponent<wood>();
+        anim = parent.a;
+        hp = parent.hp;
+    }
 
     void OnCollisionExit2D(Collision2D col)
     {
@@ -15,7 +16,7 @@ public class box : MonoBehaviour {
         if (hp <= 0)
         {
             gameObject.SetActive(false);
-            Instantiate(a, this.transform.position, Quaternion.identity);
+            Instantiate(anim, this.transform.position, Quaternion.identity);
         }
         //a.SetBool("isDead", true);
         //isTouched = true;
