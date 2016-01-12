@@ -10,16 +10,17 @@ public class box : MonoBehaviour {
         hp = parent.hp;
     }
 
-    void OnCollisionExit2D(Collision2D col)
-    {
-        hp--;
-        if (hp <= 0)
-        {
-            gameObject.SetActive(false);
-            Instantiate(anim, this.transform.position, Quaternion.identity);
-        }
-        //a.SetBool("isDead", true);
-        //isTouched = true;
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if (col.relativeVelocity.sqrMagnitude < 1) {
+			return;
+		}
 
-    }
+		hp--;
+		if (hp <= 0)
+		{
+			gameObject.SetActive(false);
+			Instantiate(anim, this.transform.position, Quaternion.identity);
+		}
+	}
 }
