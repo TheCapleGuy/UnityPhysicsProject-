@@ -11,6 +11,7 @@ public class ProjectileLaunch : MonoBehaviour
 	void Start ()
     {
         //this can be done better....
+        //way better...
         dir = new Vector3(10, Random.Range(14, 7));
         intensity = new Vector2(1.1f, 1.1f);
         dir = new Vector2((dir.x * intensity.x), (dir.y * intensity.y));
