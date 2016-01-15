@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11475310}
   - 50: {fileID: 5057018}
   - 58: {fileID: 5809322}
-  - 114: {fileID: 11411864}
+  - 114: {fileID: 11425592}
   m_Layer: 10
   m_Name: MiniProjectShooter
   m_TagString: Untagged
@@ -97,7 +97,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &11411864
+--- !u!114 &11425592
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 134314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a9be7ef9b8e3d47af83ca86ecdf2f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 16f7f647d6edeec46b8f67292fa2ce7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 5057018}
@@ -139,6 +139,10 @@ Prefab:
       propertyPath: tform
       value: 
       objectReference: {fileID: 497352}
+    - target: {fileID: 0}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 5057018}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134314}

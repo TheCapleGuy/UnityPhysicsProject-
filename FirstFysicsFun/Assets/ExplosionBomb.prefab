@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11476612}
   - 58: {fileID: 5814590}
   - 50: {fileID: 5077270}
-  - 114: {fileID: 11416196}
+  - 114: {fileID: 11425628}
   m_Layer: 10
   m_Name: ExplosionBomb
   m_TagString: Untagged
@@ -97,7 +97,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &11416196
+--- !u!114 &11425628
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 120774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a9be7ef9b8e3d47af83ca86ecdf2f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 16f7f647d6edeec46b8f67292fa2ce7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 5077270}
