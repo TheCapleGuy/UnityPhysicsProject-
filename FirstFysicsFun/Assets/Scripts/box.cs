@@ -22,5 +22,6 @@ public class box : MonoBehaviour {
 			gameObject.SetActive(false);
 			Instantiate(anim, this.transform.position, Quaternion.identity);
 		}
+        
 	}
 }

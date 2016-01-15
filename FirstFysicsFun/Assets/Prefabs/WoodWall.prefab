@@ -135,6 +135,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 406842}
   - 114: {fileID: 11461722}
+  - 61: {fileID: 6135462}
+  - 114: {fileID: 11424624}
   m_Layer: 0
   m_Name: WoodWall
   m_TagString: Untagged
@@ -500,7 +502,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151118}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -516,7 +518,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106584}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -532,7 +534,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154330}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -548,7 +550,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179050}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -564,7 +566,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195366}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -586,6 +588,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: .403686762}
   serializedVersion: 2
   m_Size: {x: .868869662, y: .802041531}
+--- !u!61 &6135462
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169708}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .00282621384, y: .0668878555}
+  serializedVersion: 2
+  m_Size: {x: .869983315, y: 4.07329369}
 --- !u!61 &6143648
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -698,6 +713,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .865085602, y: .865085483, z: .798196554}
   m_Center: {x: 0, y: 0, z: .399098277}
+--- !u!114 &11424624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086cd021423bf3e44a189314c2a37c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 12
 --- !u!114 &11434416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -720,7 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c148e3b226647b443879287a2e4a473e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: {fileID: 0}
+  a: {fileID: 9520370, guid: 3a1dad299fb84c44ebcc8ef48f79089f, type: 2}
   hp: 1
 --- !u!114 &11467626
 MonoBehaviour:
@@ -780,6 +807,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 9520370, guid: 3a1dad299fb84c44ebcc8ef48f79089f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: distance
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

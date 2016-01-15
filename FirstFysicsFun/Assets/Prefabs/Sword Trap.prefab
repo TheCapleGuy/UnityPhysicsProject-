@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2350630}
   - 50: {fileID: 5073800}
   - 58: {fileID: 5823336}
+  - 114: {fileID: 11442704}
   m_Layer: 0
   m_Name: Sword Trap
   m_TagString: Untagged
@@ -267,6 +268,18 @@ PolygonCollider2D:
       - {x: -.646486819, y: .463428378}
       - {x: -.193823576, y: .295216203}
       - {x: -.186522245, y: 4.12916803}
+--- !u!114 &11442704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086cd021423bf3e44a189314c2a37c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 12
 --- !u!233 &23372216
 HingeJoint2D:
   m_ObjectHideFlags: 1

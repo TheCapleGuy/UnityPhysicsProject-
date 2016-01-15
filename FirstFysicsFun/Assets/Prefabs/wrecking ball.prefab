@@ -47,6 +47,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423940}
+  - 114: {fileID: 11462854}
+  - 61: {fileID: 6155318}
   m_Layer: 0
   m_Name: wrecking ball
   m_TagString: Untagged
@@ -120,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .577148438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482874}
@@ -307,6 +309,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .5
+--- !u!61 &6155318
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151958}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0162403584, y: -1.86762571}
+  serializedVersion: 2
+  m_Size: {x: 2.00689387, y: 4.04233646}
 --- !u!61 &6177596
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -320,6 +335,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &11462854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086cd021423bf3e44a189314c2a37c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 12
 --- !u!231 &23105100
 SpringJoint2D:
   m_ObjectHideFlags: 1

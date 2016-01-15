@@ -27,7 +27,6 @@ public class targetDmg: MonoBehaviour {
 			//gameObject.SetActive(false);
 			sr.sprite = deathSprite;
 			Instantiate(anim, this.transform.position, Quaternion.identity);
-
 		}
 	}
 }
