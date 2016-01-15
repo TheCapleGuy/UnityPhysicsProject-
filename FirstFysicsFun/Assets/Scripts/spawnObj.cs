@@ -4,32 +4,88 @@ using UnityEngine.UI;
 
 public class spawnObj : MonoBehaviour {
     public GameObject wood, brick, fan, spinSword, wreckBall;
-    public Button woodB, brickB, fanB, wBallB, sSwordB;
+    public Button woodB, brickB, fanB, wBallB, sSwordB, moneySumB;
+    public float woodValue, brickValue, fanValue, spinSwordValue, wreckBallValue, moneySum;
+    private Text woodText, brickText, fanText, wreckingBallText, swingingSwordText, moneyDisplayText;
 
-	public void SpawnBrick ()
+    void Start()
     {
-        Instantiate(brick, new Vector3(0, -1, 0), Quaternion.identity);
-        
+        woodText = woodB.GetComponentInChildren<Text>();
+        woodText.text += "$" + woodValue;
+
+        brickText = brickB.GetComponentInChildren<Text>();
+        brickText.text += "$" + brickValue;
+
+        fanText = fanB.GetComponentInChildren<Text>();
+        fanText.text += "$" + fanValue;
+
+        wreckingBallText = wBallB.GetComponentInChildren<Text>();
+        wreckingBallText.text += "$" + wreckBallValue;
+
+        swingingSwordText = sSwordB.GetComponentInChildren<Text>();
+        swingingSwordText.text += "$" + spinSwordValue;
+
+        moneyDisplayText = moneySumB.GetComponentInChildren<Text>();
+        moneyDisplayText.text += moneySum;
+    }
+
+    void UpdateMoneyLeftDisplay()
+    {
+        //clear the box displaying the amount of money left
+        moneyDisplayText.text = null;
+        // reset the box text because the moneySum has changed
+        moneyDisplayText.text = "Money Left: " + moneySum;
+    }
+
+    public void SpawnBrick ()
+    {
+        if (moneySum > brickValue)
+        {
+            Instantiate(brick, new Vector3(0, -1, 0), Quaternion.identity);
+            moneySum -= brickValue;
+            UpdateMoneyLeftDisplay();
+        }
+            
     }
 	
 	public void SpawnWood()
     {
-		Instantiate (wood, new Vector3(0,-1,0), Quaternion.identity);
-	}
+        if (moneySum > woodValue)
+        {
+            Instantiate(wood, new Vector3(0, -1, 0), Quaternion.identity);
+            moneySum -= woodValue;
+            UpdateMoneyLeftDisplay();
+        }
+    }
 
     public void SpawnFan()
     {
-        Instantiate(fan, new Vector3(0, -1, 0), Quaternion.identity);
+        if (moneySum > fanValue)
+        { 
+            Instantiate(fan, new Vector3(0, -1, 0), Quaternion.identity);
+            moneySum -= fanValue;
+            UpdateMoneyLeftDisplay();
+        }
     }
 
     public void SpawnSpinSword()
     {
-        Instantiate(spinSword, new Vector3(0, -1, 0), Quaternion.identity);
+        if (moneySum > spinSwordValue)
+        {
+            Instantiate(spinSword, new Vector3(0, -1, 0), Quaternion.identity);
+            moneySum -= spinSwordValue;
+            UpdateMoneyLeftDisplay();
+        }
     }
 
     public void SpawnWreckBall()
     {
-        Instantiate(wreckBall, new Vector3(0, -1, 0), Quaternion.identity);
+        if (moneySum > wreckBallValue)
+        {
+            Instantiate(wreckBall, new Vector3(0, -1, 0), Quaternion.identity);
+            moneySum -= wreckBallValue;
+            UpdateMoneyLeftDisplay();
+        }
     }
 
     public void enableButton()
@@ -39,26 +95,21 @@ public class spawnObj : MonoBehaviour {
         {
             Time.timeScale = 0f;
 
-            fanB.GetComponent<Button>().interactable = true;
-            wBallB.GetComponent<Button>().interactable = true;
-            sSwordB.GetComponent<Button>().interactable = true;
-
-            woodB.GetComponent<Button>().interactable = true;
-            //woodB.GetComponent<Image>().enabled = true;
-            //woodB.GetComponentInChildren<Text>().enabled = true;
-            brickB.GetComponent<Button>().interactable = true;
-            //brickB.GetComponent<Image>().enabled = true;
-            //brickB.GetComponentInChildren<Text>().enabled = true;
+            woodB.interactable = true;
+            brickB.interactable = true;
+            fanB.interactable = true;
+            wBallB.interactable = true;
+            sSwordB.interactable = true;
         }
         else
         {
             Time.timeScale = 1f;
-            fanB.GetComponent<Button>().interactable = false;
-            wBallB.GetComponent<Button>().interactable = false;
-            sSwordB.GetComponent<Button>().interactable = false;
+            fanB.interactable = false;
+            wBallB.interactable = false;
+            sSwordB.interactable = false;
 
-            woodB.GetComponent<Button>().interactable = false;
-            brickB.GetComponent<Button>().interactable = false;
+            woodB.interactable = false;
+            brickB.interactable = false;
             /*woodB.GetComponent<Image>().enabled = false;
             brickB.GetComponent<Image>().enabled = false;
             woodB.GetComponentInChildren<Text>().enabled = false;
