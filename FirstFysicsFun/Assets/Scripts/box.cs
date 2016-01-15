@@ -10,7 +10,12 @@ public class box : MonoBehaviour {
         hp = parent.hp;
     }
 
-	void OnCollisionEnter2D(Collision2D col)
+    void CreateInstance()
+    {
+        Instantiate(anim, this.transform.position, Quaternion.identity);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
 	{
 		if (col.relativeVelocity.sqrMagnitude < 1) {
 			return;
@@ -19,9 +24,8 @@ public class box : MonoBehaviour {
 		hp--;
 		if (hp <= 0)
 		{
-			gameObject.SetActive(false);
-			Instantiate(anim, this.transform.position, Quaternion.identity);
-		}
-        
+            Invoke("CreateInstance", 3);
+            Destroy(gameObject, 3);
+        }
 	}
 }
