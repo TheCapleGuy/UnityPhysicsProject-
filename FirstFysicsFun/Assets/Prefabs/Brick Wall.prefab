@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6173586}
   - 50: {fileID: 5022360}
   - 114: {fileID: 11449338}
-  - 114: {fileID: 11486702}
+  - 114: {fileID: 11422448}
   m_Layer: 0
   m_Name: Brick Wall
   m_TagString: Untagged
@@ -93,6 +93,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &11422448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2343f35c70d9c94582d92a8c92fbc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 5
+  impactDamage: 1
 --- !u!114 &11449338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,19 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 12
---- !u!114 &11486702
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2343f35c70d9c94582d92a8c92fbc48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 1
-  impactDamage: 8
+  canMove: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

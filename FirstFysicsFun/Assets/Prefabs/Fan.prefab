@@ -32,6 +32,7 @@ GameObject:
   - 61: {fileID: 6135636}
   - 50: {fileID: 5068436}
   - 114: {fileID: 11418030}
+  - 114: {fileID: 11422216}
   m_Layer: 0
   m_Name: Fan
   m_TagString: Untagged
@@ -166,6 +167,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 12
+  canMove: 0
+--- !u!114 &11422216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2343f35c70d9c94582d92a8c92fbc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1
+  impactDamage: 1
 --- !u!212 &21254390
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -224,6 +239,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: impactDamage
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
