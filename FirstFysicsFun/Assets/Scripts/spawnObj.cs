@@ -8,7 +8,7 @@ public class spawnObj : MonoBehaviour {
     public float woodValue, brickValue, fanValue, spinSwordValue, wreckBallValue, moneySum;
     private Text woodText, brickText, fanText, wreckingBallText, swingingSwordText, moneyDisplayText;
 
-    void Start()
+    void SetText()
     {
         woodText = woodB.GetComponentInChildren<Text>();
         woodText.text += "$" + woodValue;
@@ -29,23 +29,33 @@ public class spawnObj : MonoBehaviour {
         moneyDisplayText.text += moneySum;
     }
 
+    void Start()
+    {
+        SetText();
+    }
+
     void UpdateMoneyLeftDisplay()
     {
         //clear the box displaying the amount of money left
         moneyDisplayText.text = null;
         // reset the box text because the moneySum has changed
-        moneyDisplayText.text = "Money Left: " + moneySum;
+        if(moneySum < 100) // for neatness
+            moneyDisplayText.text = "Money Left: " + 0 + moneySum;
+        else
+            moneyDisplayText.text = "Money Left: " + moneySum;
     }
 
     public void SpawnBrick ()
     {
-        if (moneySum > brickValue)
-        {
-            Instantiate(brick, new Vector3(0, -1, 0), Quaternion.identity);
-            moneySum -= brickValue;
-            UpdateMoneyLeftDisplay();
-        }
-            
+     //   if (Input.GetMouseButtonDown(0))
+     //   {
+            if (moneySum > brickValue)
+            {
+                Instantiate(brick, Input.mousePosition, Quaternion.identity);
+                moneySum -= brickValue;
+                UpdateMoneyLeftDisplay();
+            }
+     //   }  
     }
 	
 	public void SpawnWood()
