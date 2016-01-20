@@ -62,9 +62,15 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > woodValue)
         {
+            //testing event system
+            
             Instantiate(wood, new Vector3(0, -1, 0), Quaternion.identity);
+            
             moneySum -= woodValue;
             UpdateMoneyLeftDisplay();
+
+            //need to know this function has been triggered
+            Debug.Log("Spawned obj from script");
         }
     }
 
