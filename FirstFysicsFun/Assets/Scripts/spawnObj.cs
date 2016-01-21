@@ -3,11 +3,16 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class spawnObj : MonoBehaviour {
+    public Camera cam;
     public GameObject wood, brick, fan, spinSword, wreckBall;
     public Button woodB, brickB, fanB, wBallB, sSwordB, moneySumB;
     public float woodValue, brickValue, fanValue, spinSwordValue, wreckBallValue, moneySum;
-    private Text woodText, brickText, fanText, wreckingBallText, swingingSwordText, moneyDisplayText;
 
+    private Text woodText, brickText, fanText, wreckingBallText, swingingSwordText, moneyDisplayText;
+    private Vector3 mouseLocInWorldSpace;
+    private Vector3 mousePos;
+    private Transform t;
+    private GameObject selectedObj;
     void SetText()
     {
         woodText = woodB.GetComponentInChildren<Text>();
@@ -32,6 +37,28 @@ public class spawnObj : MonoBehaviour {
     void Start()
     {
         SetText();
+        selectedObj = null;
+    }
+
+    void Update()
+    {
+
+        //--------- manually set z to 1
+        mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1);
+        
+        mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
+        mouseLocInWorldSpace.z = 2;
+
+        //start drag
+        if (Input.GetMouseButtonDown(0) && selectedObj != null)
+        {
+            selectedObj.transform.position = mouseLocInWorldSpace;
+            Debug.Log(mouseLocInWorldSpace + "MousePosition");
+        }
+        //end drag
+        else if (Input.GetMouseButtonUp(0))
+            selectedObj = null;
+
     }
 
     void UpdateMoneyLeftDisplay()
@@ -51,7 +78,7 @@ public class spawnObj : MonoBehaviour {
      //   {
             if (moneySum > brickValue)
             {
-                Instantiate(brick, Input.mousePosition, Quaternion.identity);
+                Instantiate(brick, Input.mousePosition, Quaternion.identity);    
                 moneySum -= brickValue;
                 UpdateMoneyLeftDisplay();
             }
@@ -62,15 +89,13 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > woodValue)
         {
-            //testing event system
-            
-            Instantiate(wood, new Vector3(0, -1, 0), Quaternion.identity);
-            
+            t = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as Transform;
+            selectedObj = t.gameObject;
+            Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= woodValue;
             UpdateMoneyLeftDisplay();
 
             //need to know this function has been triggered
-            Debug.Log("Spawned obj from script");
         }
     }
 
@@ -78,7 +103,7 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > fanValue)
         { 
-            Instantiate(fan, new Vector3(0, -1, 0), Quaternion.identity);
+            Instantiate(fan, mouseLocInWorldSpace, Quaternion.identity);
             moneySum -= fanValue;
             UpdateMoneyLeftDisplay();
         }
