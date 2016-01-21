@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 422944}
   - 33: {fileID: 3396634}
   - 23: {fileID: 2344876}
-  - 114: {fileID: 11463432}
   - 50: {fileID: 5068452}
   - 58: {fileID: 5849882}
   - 233: {fileID: 23380908}
@@ -91,7 +90,6 @@ GameObject:
   - 4: {fileID: 445522}
   - 33: {fileID: 3328266}
   - 23: {fileID: 2362434}
-  - 114: {fileID: 11404934}
   - 50: {fileID: 5008450}
   - 58: {fileID: 5869552}
   m_Layer: 10
@@ -485,30 +483,6 @@ BoxCollider2D:
   m_Offset: {x: 0.000000059604645, y: 0.0000019073486}
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2}
---- !u!114 &11404934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a9be7ef9b8e3d47af83ca86ecdf2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 5008450}
---- !u!114 &11463432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a9be7ef9b8e3d47af83ca86ecdf2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 5068452}
 --- !u!233 &23326824
 HingeJoint2D:
   m_ObjectHideFlags: 1
