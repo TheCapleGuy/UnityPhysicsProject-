@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11443482}
   - 50: {fileID: 5049974}
   - 58: {fileID: 5854126}
+  - 114: {fileID: 11473506}
   m_Layer: 10
   m_Name: ProjectileRock
   m_TagString: Untagged
@@ -86,13 +87,12 @@ CircleCollider2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101154}
   m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 6200000, guid: 332a5a6216fce9048983da02ced971fd, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: .5
 --- !u!114 &11443482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,6 +102,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80a9be7ef9b8e3d47af83ca86ecdf2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 5049974}
+--- !u!114 &11473506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f7f647d6edeec46b8f67292fa2ce7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 5049974}
