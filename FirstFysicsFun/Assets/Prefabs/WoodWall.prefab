@@ -749,6 +749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   a: {fileID: 9520370, guid: 3a1dad299fb84c44ebcc8ef48f79089f, type: 2}
   hp: 1
+  impactDamage: 4
 --- !u!114 &11467626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -815,6 +816,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: distance
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: impactDamage
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
