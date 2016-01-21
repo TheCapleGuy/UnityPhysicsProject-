@@ -47,18 +47,26 @@ public class spawnObj : MonoBehaviour {
         mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1);
         
         mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
-        mouseLocInWorldSpace.z = 2;
+        mouseLocInWorldSpace.z = 0;
 
         //start drag
         if (Input.GetMouseButtonDown(0) && selectedObj != null)
         {
             selectedObj.transform.position = mouseLocInWorldSpace;
-            Debug.Log(mouseLocInWorldSpace + "MousePosition");
+            
         }
-        //end drag
         else if (Input.GetMouseButtonUp(0))
             selectedObj = null;
 
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            Debug.Log(mouseLocInWorldSpace + "MousePosition");
+            Debug.Log(mousePos + "screen");
+         }
+        //end drag
+        
+        
     }
 
     void UpdateMoneyLeftDisplay()
@@ -90,7 +98,7 @@ public class spawnObj : MonoBehaviour {
         if (moneySum > woodValue)
         {
             t = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as Transform;
-            selectedObj = t.gameObject;
+            //selectedObj = t.gameObject;
             Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= woodValue;
             UpdateMoneyLeftDisplay();
