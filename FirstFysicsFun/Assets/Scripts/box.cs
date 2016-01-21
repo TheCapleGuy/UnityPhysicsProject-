@@ -3,25 +3,28 @@ using System.Collections;
 
 public class box : MonoBehaviour {
     private Animator anim;
-    private int hp;
+    private int hp, impactDamage;
 	void Start() {
         wood parent = transform.parent.GetComponent<wood>();
         anim = parent.a;
         hp = parent.hp;
+        impactDamage = parent.impactDamage;
     }
 
-	void OnCollisionEnter2D(Collision2D col)
-	{
-		if (col.relativeVelocity.sqrMagnitude < 1) {
-			return;
-		}
+    void CreateInstance()
+    {
+        Instantiate(anim, this.transform.position, Quaternion.identity);
+    }
 
-		hp--;
+    void OnCollisionEnter2D(Collision2D col)
+	{
+        if (col.relativeVelocity.sqrMagnitude < (impactDamage * impactDamage)) return;
+
+        hp--;
 		if (hp <= 0)
 		{
-			gameObject.SetActive(false);
-			Instantiate(anim, this.transform.position, Quaternion.identity);
-		}
-        
+            Invoke("CreateInstance", 3);
+            Destroy(gameObject, 3);
+        }
 	}
 }
