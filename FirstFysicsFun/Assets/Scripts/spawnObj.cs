@@ -43,7 +43,7 @@ public class spawnObj : MonoBehaviour {
     void Update()
     {
 
-        //--------- manually set z to 1
+        //--------- manually set z to 12
         mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 12);
         
         mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
@@ -76,9 +76,11 @@ public class spawnObj : MonoBehaviour {
      //   {
             if (moneySum > brickValue)
             {
-                Instantiate(brick, Input.mousePosition, Quaternion.identity);    
-                moneySum -= brickValue;
-                UpdateMoneyLeftDisplay();
+			selectedObj = Instantiate(brick, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+			//selectedObj = t.gameObject;
+			Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
+			moneySum -= brickValue;
+			UpdateMoneyLeftDisplay();
             }
      //   }  
     }
@@ -101,9 +103,13 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > fanValue)
         { 
-            Instantiate(fan, mouseLocInWorldSpace, Quaternion.identity);
-            moneySum -= fanValue;
-            UpdateMoneyLeftDisplay();
+			selectedObj = Instantiate(fan, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+			if(selectedObj == new GameObject())
+				Debug.Log("Still empty");
+			//selectedObj = t.gameObject;
+			Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
+			moneySum -= fanValue;
+			UpdateMoneyLeftDisplay();
         }
     }
 
@@ -111,9 +117,11 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > spinSwordValue)
         {
-            Instantiate(spinSword, new Vector3(0, -1, 0), Quaternion.identity);
-            moneySum -= spinSwordValue;
-            UpdateMoneyLeftDisplay();
+			selectedObj = Instantiate(spinSword, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+			//selectedObj = t.gameObject;
+			Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
+			moneySum -= spinSwordValue;
+			UpdateMoneyLeftDisplay();
         }
     }
 
@@ -121,9 +129,11 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > wreckBallValue)
         {
-            Instantiate(wreckBall, new Vector3(0, -1, 0), Quaternion.identity);
-            moneySum -= wreckBallValue;
-            UpdateMoneyLeftDisplay();
+			selectedObj = Instantiate(wreckBall, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+			//selectedObj = t.gameObject;
+			Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
+			moneySum -= wreckBallValue;
+			UpdateMoneyLeftDisplay();
         }
     }
 
