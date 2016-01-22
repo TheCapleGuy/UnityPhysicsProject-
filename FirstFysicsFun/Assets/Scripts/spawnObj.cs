@@ -12,7 +12,7 @@ public class spawnObj : MonoBehaviour {
     private Vector3 mouseLocInWorldSpace;
     private Vector3 mousePos;
     private Transform t;
-    private GameObject selectedObj;
+    public  GameObject selectedObj;
     void SetText()
     {
         woodText = woodB.GetComponentInChildren<Text>();
@@ -37,20 +37,18 @@ public class spawnObj : MonoBehaviour {
     void Start()
     {
         SetText();
-        selectedObj = null;
+        selectedObj = new GameObject();
     }
 
     void Update()
     {
 
         //--------- manually set z to 1
-        mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1);
+        mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 12);
         
         mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
-        mouseLocInWorldSpace.z = 2;
-
         //start drag
-        if (Input.GetMouseButtonDown(0) && selectedObj != null)
+        if (Input.GetMouseButton(0) && selectedObj != null)
         {
             selectedObj.transform.position = mouseLocInWorldSpace;
             Debug.Log(mouseLocInWorldSpace + "MousePosition");
@@ -89,8 +87,8 @@ public class spawnObj : MonoBehaviour {
     {
         if (moneySum > woodValue)
         {
-            t = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as Transform;
-            selectedObj = t.gameObject;
+            selectedObj = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+            //selectedObj = t.gameObject;
             Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= woodValue;
             UpdateMoneyLeftDisplay();
