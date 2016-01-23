@@ -6,13 +6,15 @@ public class spawnObj : MonoBehaviour {
     public Camera cam;
     public GameObject wood, brick, fan, spinSword, wreckBall;
     public Button woodB, brickB, fanB, wBallB, sSwordB, moneySumB;
-    public float woodValue, brickValue, fanValue, spinSwordValue, wreckBallValue, moneySum;
+    public float woodValue, brickValue, fanValue, spinSwordValue, wreckBallValue, moneySum, rotateSpeed;
 
     private Text woodText, brickText, fanText, wreckingBallText, swingingSwordText, moneyDisplayText;
     private Vector3 mouseLocInWorldSpace;
     private Vector3 mousePos;
     private Transform t;
-    public  GameObject selectedObj;
+    public  GameObject selectedObj, emptyGameObject;
+    private bool rotating;
+    private Quaternion rotation;
     void SetText()
     {
         woodText = woodB.GetComponentInChildren<Text>();
@@ -37,26 +39,43 @@ public class spawnObj : MonoBehaviour {
     void Start()
     {
         SetText();
-        selectedObj = new GameObject();
+        selectedObj = emptyGameObject = new GameObject();
+        rotating = false;
+    }
+
+    public void OnDrag()
+    {
+        selectedObj.transform.position = mouseLocInWorldSpace;
+    }
+
+
+    public void EndDrag()
+    {
+        rotating = true;
+    }
+
+    public void RotateObj()
+    {
+        if (rotating) //selectedObj.transform.LookAt(mouseLocInWorldSpace);
+            selectedObj.transform.rotation = new Quaternion(0,0, rotation.z, rotation.w);
+        if (Input.GetMouseButtonDown(0))
+        {
+            selectedObj = emptyGameObject;
+            rotating = false;
+        }
     }
 
     void Update()
     {
-
+        if(selectedObj != emptyGameObject)
+            rotation = Quaternion.LookRotation(
+                                 Input.mousePosition - selectedObj.transform.position,
+                                 selectedObj.transform.TransformDirection(Vector3.up));
         //--------- manually set z to 1
-        mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 12);
+        mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
         
         mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
-        //start drag
-        if (Input.GetMouseButton(0) && selectedObj != null)
-        {
-            selectedObj.transform.position = mouseLocInWorldSpace;
-            Debug.Log(mouseLocInWorldSpace + "MousePosition");
-        }
-        //end drag
-        else if (Input.GetMouseButtonUp(0))
-            selectedObj = null;
-
+        RotateObj();
     }
 
     void UpdateMoneyLeftDisplay()
@@ -74,18 +93,20 @@ public class spawnObj : MonoBehaviour {
     {
      //   if (Input.GetMouseButtonDown(0))
      //   {
-            if (moneySum > brickValue)
+            if (moneySum >= brickValue && brickB.IsInteractable())
             {
-                Instantiate(brick, Input.mousePosition, Quaternion.identity);    
-                moneySum -= brickValue;
-                UpdateMoneyLeftDisplay();
-            }
+            selectedObj = Instantiate(brick, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+            //selectedObj = t.gameObject;
+            Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
+            moneySum -= brickValue;
+            UpdateMoneyLeftDisplay();
+        }
      //   }  
     }
 	
 	public void SpawnWood()
     {
-        if (moneySum > woodValue)
+        if (moneySum >= woodValue && woodB.IsInteractable())
         {
             selectedObj = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
             //selectedObj = t.gameObject;
@@ -99,9 +120,11 @@ public class spawnObj : MonoBehaviour {
 
     public void SpawnFan()
     {
-        if (moneySum > fanValue)
-        { 
-            Instantiate(fan, mouseLocInWorldSpace, Quaternion.identity);
+        if (moneySum >= fanValue && fanB.IsInteractable())
+        {
+            selectedObj = Instantiate(fan, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+            //selectedObj = t.gameObject;
+            Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= fanValue;
             UpdateMoneyLeftDisplay();
         }
@@ -109,9 +132,11 @@ public class spawnObj : MonoBehaviour {
 
     public void SpawnSpinSword()
     {
-        if (moneySum > spinSwordValue)
+        if (moneySum >= spinSwordValue && sSwordB.IsInteractable())
         {
-            Instantiate(spinSword, new Vector3(0, -1, 0), Quaternion.identity);
+            selectedObj = Instantiate(spinSword, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+            //selectedObj = t.gameObject;
+            Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= spinSwordValue;
             UpdateMoneyLeftDisplay();
         }
@@ -119,9 +144,11 @@ public class spawnObj : MonoBehaviour {
 
     public void SpawnWreckBall()
     {
-        if (moneySum > wreckBallValue)
+        if (moneySum >= wreckBallValue && wBallB.IsInteractable())
         {
-            Instantiate(wreckBall, new Vector3(0, -1, 0), Quaternion.identity);
+            selectedObj = Instantiate(wreckBall, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
+            //selectedObj = t.gameObject;
+            Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= wreckBallValue;
             UpdateMoneyLeftDisplay();
         }
