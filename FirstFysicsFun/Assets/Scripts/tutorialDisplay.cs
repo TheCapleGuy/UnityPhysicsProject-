@@ -6,8 +6,23 @@ public class tutorialDisplay : MonoBehaviour {
     public GameObject b1, b2, b3, b4, b5;
     private GameObject[] textList;
     public int buttonIndex = 0;
+    public GameObject pSpawner;
 
-	void Start () {
+    IEnumerator Wait()
+    {
+        Debug.Log(Time.time);
+
+        float timeToWait = 3.0f;
+        while (timeToWait >= 0f)
+        {
+            timeToWait -= Time.unscaledDeltaTime;
+            yield return null;
+        }
+        ActivateText();
+        Debug.Log("paused successfully");
+    }
+
+    void Start () {
         SpriteRenderer r = GetComponent<SpriteRenderer>();
         // make transparent
         r.color = new Vector4(1f, 1f, 1f, .75f);
@@ -36,6 +51,11 @@ public class tutorialDisplay : MonoBehaviour {
 
         // disable text
         textList[buttonIndex].SetActive(false);
+
+        if (buttonIndex < 3)
+            StartCoroutine( Wait());
+        
+        //Debug.Log(Time.time);
     }
 
     void Update()
@@ -43,8 +63,9 @@ public class tutorialDisplay : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.T))
         {
             ActivateText();
-            Debug.Log("pressed");
         }
+
+        //Debug.Log(Time.time);
     }
 
 
@@ -54,8 +75,10 @@ public class tutorialDisplay : MonoBehaviour {
         if(buttonIndex < 4)
         // increment text
             buttonIndex++;
+        if (buttonIndex == 3)
+            pSpawner.SetActive(true);
 
-        SpriteRenderer r = GetComponent<SpriteRenderer>();
+            SpriteRenderer r = GetComponent<SpriteRenderer>();
         // make transparent
         r.color = new Vector4(1f, 1f, 1f, .75f);
         

@@ -5,7 +5,10 @@ public class SpawnProjectiles : MonoBehaviour {
 
     public int totalNumberOfProjectiles;
     private int numberOfProjectilesSpawned;
-    public Object prefab;
+    //public Object prefab;
+    public GameObject g, go;
+    public float projectileSize;
+
     private float spawnDelay;
     private float time;
 
@@ -14,6 +17,7 @@ public class SpawnProjectiles : MonoBehaviour {
     {
         time = 0;
         spawnDelay = .6f;
+
 	}
 	
 	// Update is called once per frame
@@ -25,8 +29,9 @@ public class SpawnProjectiles : MonoBehaviour {
             if (numberOfProjectilesSpawned < totalNumberOfProjectiles)
             {
                 numberOfProjectilesSpawned++;
-                Debug.Log("Spawn!: " + prefab.name);
-                Instantiate(prefab, transform.position, Quaternion.identity);
+                //Debug.Log("Spawn!: " + prefab.name);
+                go = Instantiate(g, transform.position, Quaternion.identity) as GameObject;
+                go.transform.localScale *= projectileSize;
             }
             time = 0;
         }
