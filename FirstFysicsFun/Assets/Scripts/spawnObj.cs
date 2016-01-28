@@ -53,6 +53,7 @@ public class spawnObj : MonoBehaviour {
         rotating = true;
     }
 
+
     public void RotateObj()
     {
         if (rotating) //selectedObj.transform.LookAt(mouseLocInWorldSpace, transform.up);
@@ -111,7 +112,7 @@ public class spawnObj : MonoBehaviour {
         if (moneySum >= woodValue && woodB.IsInteractable())
         {
             selectedObj = Instantiate(wood, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
-            //selectedObj = t.gameObject;
+
             Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
             moneySum -= woodValue;
             UpdateMoneyLeftDisplay();

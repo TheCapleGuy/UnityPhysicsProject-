@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.96, y: -3.07, z: -0.1}
+  m_LocalPosition: {x: -24.9599991, y: -3.06999993, z: -.100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40,14 +40,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalNumberOfProjectiles: 10
-  prefab: {fileID: 101154, guid: 34080bf7a6a7a054ca58215592f285ff, type: 2}
+  g: {fileID: 101154, guid: 34080bf7a6a7a054ca58215592f285ff, type: 2}
+  go: {fileID: 0}
+  projectileSize: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: projectileSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: g
+      value: 
+      objectReference: {fileID: 101154, guid: 34080bf7a6a7a054ca58215592f285ff, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148294}

@@ -134,15 +134,15 @@ Prefab:
       objectReference: {fileID: 6200000, guid: 332a5a6216fce9048983da02ced971fd, type: 2}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_UsedByEffector
