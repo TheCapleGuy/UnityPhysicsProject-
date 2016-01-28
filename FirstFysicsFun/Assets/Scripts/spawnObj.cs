@@ -48,7 +48,6 @@ public class spawnObj : MonoBehaviour {
         selectedObj.transform.position = mouseLocInWorldSpace;
     }
 
-
     public void EndDrag()
     {
         rotating = true;
@@ -97,8 +96,6 @@ public class spawnObj : MonoBehaviour {
 
     public void SpawnBrick ()
     {
-     //   if (Input.GetMouseButtonDown(0))
-     //   {
         if (moneySum >= brickValue && brickB.IsInteractable())
         {
             selectedObj = Instantiate(brick, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
@@ -107,7 +104,6 @@ public class spawnObj : MonoBehaviour {
             moneySum -= brickValue;
             UpdateMoneyLeftDisplay();
         }
-     //   }  
     }
 	
 	public void SpawnWood()
