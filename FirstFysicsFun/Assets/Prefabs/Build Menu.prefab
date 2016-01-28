@@ -1212,6 +1212,7 @@ MonoBehaviour:
   b4: {fileID: 153494}
   b5: {fileID: 153494}
   buttonIndex: 0
+  pSpawner: {fileID: 0}
 --- !u!114 &11442202
 MonoBehaviour:
   m_ObjectHideFlags: 1
