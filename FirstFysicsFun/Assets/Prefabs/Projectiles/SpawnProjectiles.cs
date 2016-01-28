@@ -31,7 +31,7 @@ public class SpawnProjectiles : MonoBehaviour {
                 numberOfProjectilesSpawned++;
                 //Debug.Log("Spawn!: " + prefab.name);
                 go = Instantiate(g, transform.position, Quaternion.identity) as GameObject;
-                go.transform.localScale *= projectileSize;
+                //go.transform.localScale *= projectileSize;
             }
             time = 0;
         }
