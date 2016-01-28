@@ -56,8 +56,12 @@ public class spawnObj : MonoBehaviour {
 
     public void RotateObj()
     {
-        if (rotating) //selectedObj.transform.LookAt(mouseLocInWorldSpace);
-            selectedObj.transform.rotation = new Quaternion(0,0, rotation.z, rotation.w);
+        if (rotating) //selectedObj.transform.LookAt(mouseLocInWorldSpace, transform.up);
+        {
+            selectedObj.transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);          
+        }
+        //deselect the obj and rotate the z to make 
+        //the obj's collider face the camera
         if (Input.GetMouseButtonDown(0))
         {
             selectedObj = emptyGameObject;
@@ -67,9 +71,11 @@ public class spawnObj : MonoBehaviour {
 
     void Update()
     {
-        if(selectedObj != emptyGameObject)
+        if (selectedObj != emptyGameObject)
+            //rotation = Quaternion.Euler(mouseLocInWorldSpace.x, mouseLocInWorldSpace.y, 0);
             rotation = Quaternion.LookRotation(
-                                 Input.mousePosition - selectedObj.transform.position,
+                                 /*Input.mousePosition - selectedObj.transform.position,*/
+                                 mouseLocInWorldSpace - selectedObj.transform.position,
                                  selectedObj.transform.TransformDirection(Vector3.up));
         //--------- manually set z to 1
         mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
@@ -93,8 +99,8 @@ public class spawnObj : MonoBehaviour {
     {
      //   if (Input.GetMouseButtonDown(0))
      //   {
-            if (moneySum >= brickValue && brickB.IsInteractable())
-            {
+        if (moneySum >= brickValue && brickB.IsInteractable())
+        {
             selectedObj = Instantiate(brick, mouseLocInWorldSpace, Quaternion.identity) as GameObject;
             //selectedObj = t.gameObject;
             Debug.Log(mouseLocInWorldSpace + "Where obj spawned");
