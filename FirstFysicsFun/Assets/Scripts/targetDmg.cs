@@ -7,13 +7,15 @@ public class targetDmg: MonoBehaviour {
 	public Animator anim;
 	public Sprite deathSprite;
 	public SpriteRenderer sr;
+    static bool levelDone;
 
-	//private int curHp;
-	private float dmgSqr;
+    //private int curHp;
+    private float dmgSqr;
 	// Use this for initialization
 	void Start () {
 		//curHp = hp;
 		dmgSqr = impactDamage * impactDamage;
+        levelDone = false;
 	}
 	
 	void OnCollisionEnter2D(Collision2D col)

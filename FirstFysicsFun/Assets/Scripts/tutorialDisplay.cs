@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class tutorialDisplay : MonoBehaviour {
-    public GameObject b1, b2, b3, b4, b5;
+    public GameObject b1, b2, b3, b4, b5, b6;
+    public int amountButtons;
     private GameObject[] textList;
     public int buttonIndex = 0;
     public GameObject pSpawner;
@@ -12,27 +13,27 @@ public class tutorialDisplay : MonoBehaviour {
     {
         Debug.Log(Time.time);
 
-        float timeToWait = 3.0f;
+        float timeToWait = 1.0f;
         while (timeToWait >= 0f)
         {
             timeToWait -= Time.unscaledDeltaTime;
             yield return null;
         }
         ActivateText();
-        Debug.Log("paused successfully");
     }
 
     void Start () {
         SpriteRenderer r = GetComponent<SpriteRenderer>();
         // make transparent
         r.color = new Vector4(1f, 1f, 1f, .75f);
-
-        textList = new GameObject[5];
+        // put buttons into list
+        textList = new GameObject[amountButtons];
         textList[0] = b1;
         textList[1] = b2;
         textList[2] = b3;
         textList[3] = b4;
         textList[4] = b5;
+        textList[5] = b6;
         //pause game
         Time.timeScale = 0;
 
@@ -46,44 +47,52 @@ public class tutorialDisplay : MonoBehaviour {
         // make completely clear
         r.color = new Vector4(1f, 1f, 1f, 0f);
 
-        // game unpause
-        //Time.timeScale = 1;
-
         // disable text
         textList[buttonIndex].SetActive(false);
 
-        if (buttonIndex < 3)
+        if (buttonIndex < amountButtons-1)
             StartCoroutine( Wait());
-        
-        //Debug.Log(Time.time);
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.T))
+        if (buttonIndex == amountButtons-1)
         {
-            ActivateText();
+            pSpawner.SetActive(true);
+        }
+        if (buttonIndex >= amountButtons)
+        {
+            for (int i = 0; i < amountButtons; i++)
+            {
+                textList[i].SetActive(false);
+            }
+            foreach(GameObject g in textList)
+            { g.SetActive(false); }
         }
 
-        //Debug.Log(Time.time);
+        // for testing purposes
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            Application.LoadLevel("level 1");
+            //GameObject.FindGameObjectWithTag("tut display").SetActive(false);
+        }
     }
 
 
     // call when time to display text
     void ActivateText()
     {
-        if(buttonIndex < 4)
+        if(buttonIndex < amountButtons)
         // increment text
             buttonIndex++;
-        if (buttonIndex == 3)
-            pSpawner.SetActive(true);
-
-            SpriteRenderer r = GetComponent<SpriteRenderer>();
+        
+        SpriteRenderer r = GetComponent<SpriteRenderer>();
         // make transparent
         r.color = new Vector4(1f, 1f, 1f, .75f);
         
 
         textList[buttonIndex].SetActive(true);
-        //activeText.enabled = true;
+
+        
     }
 }
