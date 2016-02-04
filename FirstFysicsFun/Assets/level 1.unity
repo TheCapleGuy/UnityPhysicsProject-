@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 491772, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.345615
+      value: -20.34
       objectReference: {fileID: 0}
     - target: {fileID: 491772, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
       propertyPath: m_LocalPosition.y
@@ -123,6 +123,14 @@ Prefab:
     - target: {fileID: 491772, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478074, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
+      propertyPath: g
+      value: 
+      objectReference: {fileID: 104522, guid: 3ab8bc825255ffb41bfa2aacfb8e2651, type: 2}
+    - target: {fileID: 11478074, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
+      propertyPath: totalNumberOfProjectiles
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 363d4d69eb8bc624b931256d7c815366, type: 2}
