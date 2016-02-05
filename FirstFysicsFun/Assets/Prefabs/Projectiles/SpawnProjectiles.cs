@@ -39,7 +39,7 @@ public class SpawnProjectiles : MonoBehaviour {
             loseTxt.SetActive(true);
 
             yield return new WaitForSeconds(2);
-
+            
             if (currentLevel == "level 1")
                 Application.LoadLevel("level 1");
             if (currentLevel == "Level 2")

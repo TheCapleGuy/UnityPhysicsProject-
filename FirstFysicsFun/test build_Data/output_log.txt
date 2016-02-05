@@ -16,7 +16,7 @@ Platform assembly: C:\Users\wade.gushikuma\Documents\GitHub\Unity\UnityPhysicsPr
 Loading C:\Users\wade.gushikuma\Documents\GitHub\Unity\UnityPhysicsProject--master\UnityPhysicsProject-\FirstFysicsFun\test build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\wade.gushikuma\Documents\GitHub\Unity\UnityPhysicsProject--master\UnityPhysicsProject-\FirstFysicsFun\test build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\wade.gushikuma\Documents\GitHub\Unity\UnityPhysicsProject--master\UnityPhysicsProject-\FirstFysicsFun\test build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.062 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -27,674 +27,825 @@ The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1715)
 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.190366 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 703.
+Total: 0.683508 ms (FindLiveObjects: 0.042950 ms CreateObjectMapping: 0.050914 ms MarkObjects: 0.504880 ms  DeleteObjects: 0.083340 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+(-5.6, 3.0, 0.0)Where obj spawned
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+(-7.2, 2.3, 0.0)Where obj spawned
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 71)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+one is dead
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+one is dead
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.938158 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 703.
+Total: 0.896838 ms (FindLiveObjects: 0.052052 ms CreateObjectMapping: 0.066558 ms MarkObjects: 0.767702 ms  DeleteObjects: 0.009386 ms)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+one is dead
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+one is dead
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.032217 ms
+UnloadTime: 6.226386 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 716.
-Total: 0.370624 ms (FindLiveObjects: 0.023039 ms CreateObjectMapping: 0.025315 ms MarkObjects: 0.279319 ms  DeleteObjects: 0.042097 ms)
-
-1.593689
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-1.593689
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-1.593689
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-(-7.5, 3.9, 0.0)Where obj spawned
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-1.593689
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-1.593689
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.803826 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 716.
-Total: 0.319710 ms (FindLiveObjects: 0.022470 ms CreateObjectMapping: 0.023039 ms MarkObjects: 0.270217 ms  DeleteObjects: 0.003697 ms)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-9.142957
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.ActivateText () [0x00000] in <filename unknown>:0 
-  at tutorialDisplay+<Wait>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.ActivateText () [0x00000] in <filename unknown>:0 
-  at tutorialDisplay+<Wait>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.OnMouseDown () [0x00000] in <filename unknown>:0 
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-UnityEngine.HitInfo:SendMessage(String)
-UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
-UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.OnMouseDown () [0x00000] in <filename unknown>:0 
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-UnityEngine.HitInfo:SendMessage(String)
-UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
-UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
- 
-(Filename:  Line: -1)
-
-(-7.1, 3.7, 0.0)Where obj spawned
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-Look rotation viewing vector is zero
- 
-(Filename:  Line: 71)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.OnMouseDown () [0x00000] in <filename unknown>:0 
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-UnityEngine.HitInfo:SendMessage(String)
-UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
-UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.OnMouseDown () [0x00000] in <filename unknown>:0 
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-UnityEngine.HitInfo:SendMessage(String)
-UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
-UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at tutorialDisplay.OnMouseDown () [0x00000] in <filename unknown>:0 
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-UnityEngine.HitInfo:SendMessage(String)
-UnityEngine.SendMouseEvents:SendEvents(Int32, HitInfo)
-UnityEngine.SendMouseEvents:DoSendMouseEvents(Int32, Int32)
- 
-(Filename:  Line: -1)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1715)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.941495 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 716.
-Total: 0.353558 ms (FindLiveObjects: 0.027306 ms CreateObjectMapping: 0.024746 ms MarkObjects: 0.297523 ms  DeleteObjects: 0.003697 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 703.
+Total: 0.802120 ms (FindLiveObjects: 0.054043 ms CreateObjectMapping: 0.067412 ms MarkObjects: 0.669855 ms  DeleteObjects: 0.009955 ms)
 
