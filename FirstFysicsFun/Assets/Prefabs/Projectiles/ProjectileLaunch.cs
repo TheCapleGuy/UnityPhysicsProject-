@@ -13,7 +13,7 @@ public class ProjectileLaunch : MonoBehaviour
         //this can be done better....
         //way better...
         dir = new Vector3(10, Random.Range(14, 7));
-        intensity = new Vector2(1.1f, 1.1f);
+        intensity = new Vector2(1, 1);
         dir = new Vector2((dir.x * intensity.x), (dir.y * intensity.y));
 
         //change to addForce
@@ -24,7 +24,8 @@ public class ProjectileLaunch : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if(transform.position.x > 30)
+        if(transform.position.x > 12)
          Destroy(gameObject);
+        Destroy(gameObject, 4);
     }
 }

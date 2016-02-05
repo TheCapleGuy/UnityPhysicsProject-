@@ -16,8 +16,11 @@ public class drag : MonoBehaviour {
     private Vector3 mousePos, mouseLocInWorldSpace;
     public void OnMouseDrag()
     {
-        isDragging = true;
-        this.gameObject.transform.position = mouseLocInWorldSpace;
+        if(Time.timeScale == 0)
+        {
+            isDragging = true;
+            this.gameObject.transform.position = mouseLocInWorldSpace;
+        }
     }
 
     //public void EndDrag()

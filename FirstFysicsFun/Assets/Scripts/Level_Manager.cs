@@ -11,4 +11,8 @@ public class Level_Manager : MonoBehaviour {
 	{
 		Application.LoadLevel (1);
 	}
+    public void LoadLevel2()
+    {
+        Application.LoadLevel("Level 2");
+    }
 }

@@ -82,6 +82,10 @@ public class spawnObj : MonoBehaviour {
         
         mouseLocInWorldSpace = cam.ScreenToWorldPoint(mousePos);
         RotateObj();
+
+        //to update money sum mid game
+        moneyDisplayText = moneySumB.GetComponentInChildren<Text>();
+        moneyDisplayText.text = moneySum.ToString();
     }
 
     void UpdateMoneyLeftDisplay()
